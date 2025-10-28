@@ -1,0 +1,15 @@
+{
+  "name": "zoommeetingaudittool",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mzrimsek/ZoomMeetingAuditTool.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/mzrimsek/ZoomMeetingAuditTool/issues"
+  },
+  "homepage": "https://github.com/mzrimsek/ZoomMeetingAuditTool#readme"
+}
