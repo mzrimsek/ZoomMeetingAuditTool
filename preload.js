@@ -8,5 +8,5 @@ contextBridge.exposeInMainWorld("versions", {
 });
 
 contextBridge.exposeInMainWorld("comms", {
-  ping: () => ipcRenderer.invoke("ping"),
+  message: (msg) => ipcRenderer.invoke("message", msg),
 });

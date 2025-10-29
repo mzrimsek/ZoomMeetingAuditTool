@@ -12,7 +12,10 @@ const createWindow = () => {
   });
   win.loadFile("index.html");
 };
+
 app.whenReady().then(() => {
-  ipcMain.handle("ping", () => "pong");
+  ipcMain.handle("message", (event, msg) => {
+    console.log("Received message:", msg);
+  });
   createWindow();
 });
