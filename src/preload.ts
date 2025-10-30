@@ -1,4 +1,4 @@
-const { contextBridge, ipcRenderer } = require("electron");
+import { contextBridge, ipcRenderer } from "electron";
 
 contextBridge.exposeInMainWorld("versions", {
   node: () => process.versions.node,
@@ -8,5 +8,5 @@ contextBridge.exposeInMainWorld("versions", {
 });
 
 contextBridge.exposeInMainWorld("comms", {
-  message: (msg) => ipcRenderer.invoke("message", msg),
+  message: (msg: string) => ipcRenderer.invoke("message", msg),
 });
